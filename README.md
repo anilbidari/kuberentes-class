@@ -44,6 +44,8 @@ sudo kubeadm join (command you copied in your master node deployment at the end 
 
 ###### Step 4 ===========
 Login to Master node -SSH as ubuntu user ( dont switch to root)
+
+
 kubectl get nodes 
 # all nodes shoudl be ready ( wait for 4 mins) and your nodes will be ready state
 
