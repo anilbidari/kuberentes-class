@@ -26,6 +26,7 @@ git clone https://github.com/anilbidari/kuberentes-class.git
 cd kuberenetes-class
 sudo chmod a+x master.sh 
 ./master.sh
+sudo kubeadm token create --print-join-command ( copy the output fo this command and keep it note pad - u need kubeadm join command later on your nodes)
 
 
 ###### Step 2 ===========
@@ -34,7 +35,7 @@ git clone https://github.com/anilbidari/kuberentes-class.git
 cd kuberenetes-class
 sudo chmod a+x node.sh 
 ./node.sh
-
+sudo kubeadm join (command you copied in your master node deployment at the end of step 1 completetion)
 
 ###### Step 3 ===========
 Login to Slave node3 -SSH as ubuntu user ( dont switch to root)
@@ -42,6 +43,7 @@ git clone https://github.com/anilbidari/kuberentes-class.git
 cd kuberenetes-class
 sudo chmod a+x node.sh 
 ./node.sh
+sudo kubeadm join (command you copied in your master node deployment at the end of step 1 completetion)
 
 ###### Step 4 ===========
 Login to Master node -SSH as ubuntu user ( dont switch to root)
